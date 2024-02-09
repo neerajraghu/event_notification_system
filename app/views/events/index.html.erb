@@ -1,0 +1,19 @@
+<h1>Event Management</h1>
+
+<%= notice %>
+<br>
+<br>
+
+<%= form_tag '/events/create_event_a', method: :post do %>
+  <%= submit_tag 'Create Event A' %>
+<% end %>
+
+<br>
+
+<%= form_tag '/events/create_event_b', method: :post do %>
+  <%= submit_tag 'Create Event B' %>
+<% end %>
+
+<br>
+
+<%= button_to "Sign out", destroy_user_session_path, method: :delete %>
